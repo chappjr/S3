@@ -1,5 +1,8 @@
+# Description of what this change includes
+# Revision number
+# Date
 AWSTemplateFormatVersion: 2019-09-09
-Resorces:
+Resources:
   S3Bucket:
     Type: 'AWS:S3:Bucket'
     Properties:
@@ -13,8 +16,8 @@ Resorces:
         ErrorDocument: error.html
     DeletionPolicy: Retain
     UpdateReplacePolicy: Retain
-BucketPolicy:
-    #Type: 'AWS::S3::BucketPolicy'
+  BucketPolicy:
+    Type: 'AWS::S3::BucketPolicy'
     Properties:
       PolicyDocument:
         Id: MyPolicy
